@@ -1,6 +1,7 @@
 name: Update Index
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
@@ -18,7 +19,7 @@ jobs:
           version: v3.7.0
       - name: Update Index
         run: |
-          helm repo index .
+          helm repo index tercers-api
           git config --global user.email "yourbot@yourorg.com"
           git config --global user.name "YourOrg Bot"
           git add index.yaml
