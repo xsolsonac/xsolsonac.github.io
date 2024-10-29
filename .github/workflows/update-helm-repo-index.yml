@@ -9,19 +9,21 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
         uses: actions/checkout@v3
+
       - name: Helm Installation
         uses: azure/setup-helm@v1.1
         with:
           version: v3.7.0
+          
       - name: Update Index
         run: |
           helm repo index tercers-api
-          git config --global user.email "yourbot@yourorg.com"
-          git config --global user.name "YourOrg Bot"
+          git config --global user.email "xsolsonac@users.noreply.github.com"
+          git config --global user.name "Continuous Integration Automation"
           git add tercers-api/index.yaml
           git commit -m "Update chart index"
           git push
