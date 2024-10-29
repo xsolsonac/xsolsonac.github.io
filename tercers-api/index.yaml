@@ -3,7 +3,17 @@ entries:
   hercules-udl-mi:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-29T11:51:16.060932437Z"
+    created: "2024-10-29T11:52:50.244750799Z"
+    description: An Hercules API integrator Helm chart for Kubernetes
+    digest: ff9e507bd507c5497f8f310dfdf1fba785da2b5c0fd1b21486d022a90ea60faa
+    name: hercules-udl-mi
+    type: application
+    urls:
+    - hercules-udl-mi-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-29T11:52:50.244352454Z"
     description: A Helm chart for Kubernetes
     digest: 0af05388b4ff506e05e06e28e30f2686cc21ffc8c06fbc33109aca35bfac6f26
     name: hercules-udl-mi
@@ -11,4 +21,4 @@ entries:
     urls:
     - hercules-udl-mi-1.0.0.tgz
     version: 1.0.0
-generated: "2024-10-29T11:51:16.060376267Z"
+generated: "2024-10-29T11:52:50.243779392Z"
