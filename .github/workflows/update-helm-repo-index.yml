@@ -22,6 +22,6 @@ jobs:
           helm repo index tercers-api
           git config --global user.email "yourbot@yourorg.com"
           git config --global user.name "YourOrg Bot"
-          git add index.yaml
+          git add tercers-api/index.yaml
           git commit -m "Update chart index"
           git push
