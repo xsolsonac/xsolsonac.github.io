@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Git Checkout
         uses: actions/checkout@v3
-
+        with:
+          token: ${{ secrets.WORKFLOW_GIT_ACCESS_TOKEN }}
       - name: Helm Installation
         uses: azure/setup-helm@v1.1
         with:
